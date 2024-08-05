@@ -6,7 +6,7 @@ Examples are provided for various enviroments:
 
 ## Docker
 
-- [docker-compose](./docker/README.md)
+- [docker-compose](https://github.com/joshleecreates/clickhouse-examples/tree/main/docker)
 
 ## Kubernetes
 
