@@ -1,0 +1,10 @@
+services:
+  clickhouse:
+    container_name: clickhouse
+    image: docker.io/altinity/clickhouse-server:23.8.11.29.altinitystable
+    ports: 
+      - "8123:8123"
+      - "9000:9000"
+    volumes:
+      - ./clickhouse_database:/var/lib/clickhouse
+
