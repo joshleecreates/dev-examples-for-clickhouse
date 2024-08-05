@@ -1,0 +1,2 @@
+altinity-clickhouse-operator:
+  namespace: kube-system
