@@ -1,4 +1,4 @@
-# Simple Helm Example for ClickHouse
+# Simple Helm Example for ClickHouse® 
 
 This simple example shows the bare minimum required to deploy the Altinity Operator
 and create a ClickHouse cluster with Helm.
@@ -47,3 +47,7 @@ Query id: 09d490de-42fe-4871-9ab8-f713f3f6b72e
 ```
 
 Use `quit` or `exit` to exit the ClickHouse client and the docker container shell.
+
+## Legal
+
+Altinity®, Altinity.Cloud®, and Altinity Stable® are registered trademarks of Altinity, Inc. ClickHouse® is a registered trademark of ClickHouse, Inc.; Altinity is not affiliated with or associated with ClickHouse, Inc.

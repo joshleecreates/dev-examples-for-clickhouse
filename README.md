@@ -1,4 +1,4 @@
-# Altinity Development Examples for ClickHouse
+# Altinity Development Examples for ClickHouse®
 
 Note: These examples are provided for development and demonstration purposes. For production-ready deployments, please see blueprints-for-clickhouse
 
@@ -22,3 +22,6 @@ Uses Helm to deploy the Altinity Operator and create a ClickHouse Cluster. Optio
 
 Includes a number of example ClickHouse deployments using Helm templates with Argo. Also includes a Terraform/OpenTofu module to bootstrap a new cluster with ArgoCD.
 
+## Legal
+
+Altinity®, Altinity.Cloud®, and Altinity Stable® are registered trademarks of Altinity, Inc. ClickHouse® is a registered trademark of ClickHouse, Inc.; Altinity is not affiliated with or associated with ClickHouse, Inc.
