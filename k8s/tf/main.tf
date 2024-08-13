@@ -23,6 +23,7 @@ resource "helm_release" "altinity_operator" {
 }
 
 resource "kubernetes_manifest" "clickhouse_installation" {
+  depends_on = [helm_release.altinity_operator]
   manifest = {
     "apiVersion" = "clickhouse.altinity.com/v1"
     "kind" = "ClickHouseInstallation"
