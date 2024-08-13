@@ -1,0 +1,12 @@
+apiVersion: "clickhouse.altinity.com/v1"
+kind: "ClickHouseInstallation"
+metadata:
+  name: "simple"
+  namespace: "clickhouse"
+  # annotations:
+  #   argocd.argoproj.io/sync-wave: "1"
+spec:
+  configuration:
+    clusters:
+      - name: "simple"
+

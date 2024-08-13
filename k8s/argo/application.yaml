@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-clickhouse-argo-example
+  namespace: argocd
+spec:
+  destination:
+    namespace: clickhouse
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: k8s/argo
+    repoURL: https://github.com/joshleecreates/clickhouse-examples
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: clickhouse
+  name: clickhouse
