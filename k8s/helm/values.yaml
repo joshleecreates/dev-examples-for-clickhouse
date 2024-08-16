@@ -1,2 +1,9 @@
 altinity-clickhouse-operator:
-  namespace: kube-system
+  enabled: true
+keeper-sts:
+  enabled: false
+  keeper:
+    storage: 5Gi
+    replicas: 3
+clickhouse-keeper:
+  enabled: true

@@ -6,6 +6,15 @@ version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-- name: altinity-clickhouse-operator
-  version: "0.23.6"
-  repository:  https://altinity.github.io/clickhouse-operator
+  - name: clickhouse-keeper
+    repository: "file://../../../duyet-charts/clickhouse-keeper"
+    version: 0.1.2
+    condition: clickhouse-keeper.enabled
+  - name: keeper-sts
+    repository: https://altinity.github.io/kubernetes-blueprints-for-clickhouse
+    version: 0.1.2
+    condition: keeper-sts.enabled
+  - name: altinity-clickhouse-operator
+    repository: https://altinity.github.io/clickhouse-operator
+    version: 0.23.6
+    condition: altinity-clickhouse-operator.enabled

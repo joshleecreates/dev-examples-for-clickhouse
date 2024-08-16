@@ -1,6 +1,12 @@
 dependencies:
+- name: clickhouse-keeper
+  repository: file://../../../duyet-charts/clickhouse-keeper
+  version: 0.1.2
+- name: keeper-sts
+  repository: https://altinity.github.io/kubernetes-blueprints-for-clickhouse
+  version: 0.1.2
 - name: altinity-clickhouse-operator
   repository: https://altinity.github.io/clickhouse-operator
   version: 0.23.6
-digest: sha256:1dff4faf8e8179aafcaf57efc3bb06ab853d60757ce95ae4060ae643dd2d157d
-generated: "2024-08-05T13:52:09.640052-04:00"
+digest: sha256:74773bb76dc64c34be521e2c66c8e712b85923888ba4d6fe3388c7b5556cd19b
+generated: "2024-08-16T16:36:24.964876-04:00"

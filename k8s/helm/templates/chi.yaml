@@ -3,6 +3,25 @@ kind: "ClickHouseInstallation"
 metadata:
   name: "simple"
 spec:
+  defaults:
+    templates:
+      dataVolumeClaimTemplate: data-volume-template
   configuration:
+    zookeeper:
+      nodes:
+        - host: installation-clickhouse-keeper.clickhouse.svc.cluster.local
+          port: 2181
     clusters:
       - name: "simple"
+        layout:
+          replicasCount: 3
+          shardsCount: 1
+  templates:
+    volumeClaimTemplates:
+      - name: data-volume-template
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 1Gi
